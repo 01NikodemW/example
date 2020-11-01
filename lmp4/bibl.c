@@ -35,7 +35,7 @@ read(FILE * p, double v[], int max_l_e)
 
         /* teraz czytamy n liczb */
         for (i = 0; i < n; i++)
-                if (fscanf(p, "%f", &(v[i])) != 1)      /* fscanf powinno zawsze
+                if (fscanf(p, "%lf", &(v[i])) != 1)      /* fscanf powinno zawsze
                                                          * zwracac 1 - jesli
                                                          * zwroci cos innego */
                         return -1;      /* to znaczy, ze format pliku jest
